@@ -1,0 +1,17 @@
+GET http://localhost:8080/albums
+
+###
+
+POST http://localhost:8080/albums 
+Content-Type: application/json
+
+{
+    "id":"4",
+    "title": "The Dark Side of the Moon",
+    "artist": "Pink Floyd",
+    "year": 1973
+}
+
+###
+
+GET http://localhost:8080/albums/4
