@@ -48,6 +48,9 @@ func postAlbums(c *gin.Context) {
 }
 
 func main() {
+	// when we have to run concurrency.go
+	concurrecncyExample()
+	// when we have to implement gin or rest api
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
 	router.POST("/albums", postAlbums)
